@@ -16,26 +16,25 @@ alwaysApply: true
 ## 📌 情報源の候補（すべてでなくてもよい）
 
 ### iOS / Swift:
-- https://iosdevweekly.com/
-- https://developer.apple.com/news/
+- https://developer.apple.com/news/releases/
+- https://forums.swift.org/latest
 - https://nshipster.com/
-- https://forums.swift.org/
+- https://iosdevweekly.com/issues
 
 ### AI:
 - https://openai.com/blog
 - https://huggingface.co/blog
 - https://www.tldrnewsletter.com/
-- https://paperswithcode.com/
+- https://paperswithcode.com/latest
 
 ### セキュリティ:
 - https://thehackernews.com/
 - https://www.securityweek.com/
-- https://owasp.org/
+- https://owasp.org/www-project-mobile-top-10/
 
-### その他
-
-- https://qiita.com/
+### その他（日本語）:
 - https://zenn.dev/
+- https://qiita.com/
 - QiitaやZennの記事は、上記カテゴリ（iOS / AI / セキュリティ）のいずれかに分類できる場合のみ含めてください。
 
 ## 📅 出力形式
@@ -44,6 +43,7 @@ alwaysApply: true
 - ファイル名は `YYYY-MM-DD-news.md`（指定された日付、または今日の日付で保存）
 - 各カテゴリには、重要なニュースが複数ある場合は、**それぞれ別の「### タイトル:」ブロックとして複数件**出力してください。
 - 概要はニュースの要点・技術的な示唆・影響を2〜3文で簡潔に記述してください（冗長な前置きや背景説明は省略してOK）。
+- **リンクは `- リンク: URL` の形式で、必ず明記してください。**
 - 見出し構造は以下のように：
 
 ```
@@ -51,20 +51,23 @@ alwaysApply: true
 
 ## iOS / Swift
 
-### タイトル: [リンク]
+### タイトル
 
+* リンク: https://example.com
 * 概要（2〜3文）
 
 ## AI / 生成AI
 
-### タイトル: [リンク]
+### タイトル
 
+* リンク: https://example.com
 * 概要（2〜3文）
 
 ## セキュリティ
 
-### タイトル: [リンク]
+### タイトル
 
+* リンク: https://example.com
 * 概要（2〜3文）
 ```
 
@@ -79,5 +82,11 @@ alwaysApply: true
 - 日本語記事を優先しつつ、英語しかない場合は英語記事でも可（要約は日本語で）
 
 ## 📝 追加ルール
-- ニュース日付の指定がある場合はその日付の情報を収集
-- 指定がない場合は実行日を対象とする
+- ニュース日付の指定がある場合は、その**日付に発表・掲載されたニュースのみを収集してください**。
+  - 指定がない場合は実行日を対象とする
+- 過去日付の話題、将来の予定や告知（例：来月のWWDC開催など）、ニュースに見せかけた古い情報は除外してください。
+
+## リンクについてのルール
+- 各ニュースには、**実在するWebページへのリンク（実際に開けるURL）を必ず添えてください**。
+- AIが推測で生成した存在しないURL（404になるもの）は使わないでください。
+- 必ず**指定したニュースサイトの「ニュース一覧ページ」からたどれる記事**のURLを使ってください。
