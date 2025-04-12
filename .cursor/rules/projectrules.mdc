@@ -13,10 +13,12 @@ alwaysApply: true
 - AI・生成AI 関連
 - アプリ開発やプライバシーに関わるセキュリティ関連
 
-## 📌 情報源の候補（以下リンク先は必ず確認すること）
+- 情報源の候補
+  - 必ず **以下すべての情報源（ニュース一覧ページ）にアクセスし、日付一致するニュースがあるか確認してください。**
+  - たとえ該当記事がなかったとしても、**「そのソースを確認した上で該当なし」としてスキップすること**。
 
 ### iOS / Swift:
-- https://developer.apple.com/news/releases/
+- https://developer.apple.com/news/
 - https://forums.swift.org/latest
 - https://nshipster.com/
 - https://iosdevweekly.com/issues
